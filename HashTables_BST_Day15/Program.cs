@@ -47,6 +47,8 @@ namespace HashTables_BST_Day15
             binaryTree.Insert(67);
             binaryTree.Display();
             binaryTree.GetSize();
+            bool result = binaryTree.IfExists(63, binaryTree);               //this is searching for the element 63 and it displays the parent nodes respectively adn the path
+            Console.WriteLine(result);
 
          
 
