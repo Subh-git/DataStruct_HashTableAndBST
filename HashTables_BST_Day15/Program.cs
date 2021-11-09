@@ -28,8 +28,14 @@ namespace HashTables_BST_Day15
         }
         static void Main(string[] args)
         {
-            CountingWordFrequency("Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations");
+            //CountingWordFrequency("Paranoids are not paranoid because they are paranoid but because they keep putting themselves deliberately into paranoid avoidable situations");
 
+            // The below program is for the Binary search tree implementation
+
+            BinarySearchTree<int> binaryTree = new BinarySearchTree<int>(56);         //here we are passing the predefined node data which acts as the rootnode
+            binaryTree.Insert(30);
+            binaryTree.Insert(70);
+            binaryTree.Display();
          
 
         }
