@@ -35,7 +35,19 @@ namespace HashTables_BST_Day15
             BinarySearchTree<int> binaryTree = new BinarySearchTree<int>(56);         //here we are passing the predefined node data which acts as the rootnode
             binaryTree.Insert(30);
             binaryTree.Insert(70);
+            binaryTree.Insert(22);
+            binaryTree.Insert(40);
+            binaryTree.Insert(60);
+            binaryTree.Insert(95);                        //we are inserting the values to match the given hierarchical tree given to us in assignment
+            binaryTree.Insert(11);
+            binaryTree.Insert(65);
+            binaryTree.Insert(3);
+            binaryTree.Insert(16);
+            binaryTree.Insert(63);
+            binaryTree.Insert(67);
             binaryTree.Display();
+            binaryTree.GetSize();
+
          
 
         }

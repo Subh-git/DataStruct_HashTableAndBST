@@ -63,6 +63,41 @@ namespace HashTables_BST_Day15
             }
         }
 
+        public void GetSize()    //this method yoelds the size of the treee by counting the number of times the incrementation of left and right count
+        {
+            Console.WriteLine("Size" + " " + (1 + this.leftCount + this.rightCount));
+        }
+        /// <summary>
+        /// Ifs the exists.
+        /// this method returns true or false depeending upon whether it found the element in the tree or not
+        /// </summary>
+        /// <param name="element">The element.</param>
+        /// <param name="node">The node.</param>
+        /// <returns></returns>
+        public bool IfExists(T element, BinarySearchTree<T> node)    
+        {
+            if (node == null)
+            {
+                return false;
+            }
+            if (node.data.Equals(element))
+            {
+                Console.WriteLine("Found the element in BST" + " " + node.data);
+                result = true;
+            }
+            else
+                Console.WriteLine("Current element is {0} in BST", node.data);
+            if (element.CompareTo(node.data)< 0)
+            {
+                IfExists(element, node.leftTree);
+            }
+            if (element.CompareTo(node.data) >0)
+            {
+                IfExists(element, node.rightTree);
+            }
+            return result;
+        }
+
 
             
 
